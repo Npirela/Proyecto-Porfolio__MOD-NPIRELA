@@ -101,6 +101,7 @@
     <div >
         <div class="row d-flex justify-content-center mb-5">
             <div class="col-md-10 col-sm-6">
+             <div class="table-responsive-md"> 
                 <table class="table">
                     <thead>
                         <tr>
@@ -130,6 +131,7 @@
                         } ?>
                     </tbody>
                 </table>
+                </div> 
             </div><!--cierra el col-->  
         </div>
     </div>
