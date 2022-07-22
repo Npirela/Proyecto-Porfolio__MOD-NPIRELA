@@ -10,7 +10,7 @@
       select es_admin
       from usuarios where
       mail="" and contraseña = "";*/
-        if( ($_POST['email']=="administrador") && ($_POST['pass']=='cac') ){
+        if( ($_POST['email']=="administrador") && ($_POST['pass']=='Contrarevision*') ){
           $_SESSION['usuario']="Admin";
           $_SESSION['logueado']='S';
           #redirecciono porque ingreso ok 
