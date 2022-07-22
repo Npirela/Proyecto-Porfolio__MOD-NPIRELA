@@ -43,7 +43,10 @@
     <link rel="stylesheet" href="resources\bootstrap-5.1.3-dist\css\bootstrap.min.css">
     <!-- Hoja de estilo Local -->
     <link rel="stylesheet" href="./css/style.css">
-
+    
+    <!-- line icon cdn -->
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <!-- line icon cdn -->
 
 
        <!-- animate css -->
@@ -65,13 +68,13 @@
                         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                    <a class="nav-link active" aria-current="page" href="landing.php">Inicio</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Portafolio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#footer__contacto">Contacto</a>
+                                    <a class="nav-link" href="#contact">Contacto</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="index_admin.php">Admin</a>
@@ -117,13 +120,13 @@
                 <form action="enviar.php" method='post' >
                         <div class=" row mb-3">
                             <div class="col">
-                                <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                                <input type="text" class="form-control" id="name" placeholder="Nombre" data-toggle="tooltip" data-placement="top" title="Su Nombre" autocomplete="name" required>
                             </div>
                             <div class="col">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" data-toggle="tooltip" data-placement="top" title="example@domain.com" autocomplete="email" required>
                             </div>
                             <br>
-                            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                            <div id="emailHelp" class="form-text">No compartiremos su correo electrónico con nadie más.</div>
                         </div>
                         <div class="mb-3">
                         

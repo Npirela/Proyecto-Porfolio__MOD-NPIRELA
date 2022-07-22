@@ -7,9 +7,7 @@
         <h1 class="display-3">Administrador de Portfolio Personal</h1>
         <p class="lead">Proyectos Cargados en base de datos</p>
         <hr class="my-2">
-        <p class="lead" style="font-size:1.5rem;">Para poder acceder al portfolio, al final este mismo link cambie /index_admin.php por: /index.php <br><br>
-         En abm podra: Dar de alta un nuevo proyecto, dar de baja uno existente y modificarlo. <br>
-        Cualquier duda <a href="mailto:gis.gonzalez@bue.edu.ar">Click para enviar email</a></p>
+      
        
     </div>
 </div>

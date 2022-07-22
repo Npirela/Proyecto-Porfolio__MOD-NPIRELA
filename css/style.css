@@ -115,6 +115,22 @@ min-height: 91vh;
     min-width: 70%;
     min-height: 50%;
 }
+a{
+    text-decoration: none;
+    text-emphasis: none;
+
+}
+#WSP{
+    color: white;
+}
+
+
+.img__foot-lengua{
+    width: 6rem  ;
+    height: 6rem;
+}
+
+
 @media screen and (max-width: 800px) {
             
     .tabla{
@@ -128,14 +144,7 @@ min-height: 91vh;
     }
 }
 
-a{
-    text-decoration: none;
-    text-emphasis: none;
 
-}
-#WSP{
-    color: white;
-}
        
 /* gradiente para fondos background: rgb(134,161,177);
 background: linear-gradient(90deg, rgba(134,161,177,1) 0%, rgba(10,161,226,1) 35%, rgba(224,90,10,1) 100%);*/

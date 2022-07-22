@@ -73,17 +73,17 @@
                         </div>
                     
                         <div>
-                            <label for="archivo">Imagen del Proyecto-TESTSTSTSTT</label>
+                            <label for="archivo">Imagen del Proyecto</label>
                             <input required class="form-control" type="file" name ="archivo" id="archivo">
                         </div>
                         <br>
                         <div>
-                            <label for="descripcion">Indique Descripción del Proyecto</label>
+                            <label for="descripcion"> Descripción del Proyecto</label>
                             <textarea required class="form-control" name="descripcion" id="descripcion" cols="30" rows="4"></textarea>
                         </div>
                         <br>
                         <div>
-                            <label for="link">Indique El link del Proyecto</label>
+                            <label for="link">Link del Proyecto</label>
                             <textarea required class="form-control" name="link" id="link" cols="30" rows="4"></textarea>
                         </div>
                         <div>
