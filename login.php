@@ -31,158 +31,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <meta name="author" content="Nolberto Pirela">
+    <meta name="description" content="Administracion de la pagina">
+    <meta name="keywords" content="HTML, CSS, JavaScript, php, proyectos, diseño web, developer, backend, desarrollador, freelancer">
+    <title>Administracion - npirela </title>
 
-   <style>
-       @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dongle&family=Fjalla+One&family=Lato:ital@1&family=Montserrat:wght@300&family=Palette+Mosaic&family=Poppins:ital,wght@0,400;0,600;0,700;1,700&family=Roboto:wght@300&family=The+Nautigal:wght@700&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Montserrat, sans-serif;
-        }
+    <!-- favicon -->
 
-        body{
-            height: 100vh;
-            width: 100%;
-        }
-        .container{
-            position:relative;
-            width: 100%;
-            height: 100%;
-            display:flex;   
-            justify-content: center;
-            align-items: center;
-            padding: 20px 100px;
-        }
-        .container::after{
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-image: url("img/crud.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            filter:blur(50px);
-            z-index: -1;
-           
-            background-color: rgba(0,0,0,0.5);
-        }
-        .contact-box{
-            max-width: 850px;
-            display:grid;
-            grid-template-columns: 1fr 1fr;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background-color: #fff;
-            box-shadow: 0px 0px 19px 5px rgba( 0, 0, 0, 0.19 );
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon -->
 
-        }
-        .left{
-            background: url("img/crud.jpg") no-repeat center;
-            background-size: cover;
-            height: 100%;
-        }
-        .right{
-            padding: 25px 40px;
 
-        }
-        h2{
-            position: relative;
-            padding: 0 0 10px;
-            margin-bottom: 10px;
-        }
-        h2::after{
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            transform: translateX(-50%);
-            height: 4px;
-            width: 50px;
-            border-radius: 2px;
-         
-            background-color:#9A3C0D ;
-   
-        }
-        .field{
-            width: 100%;
-            border: 2px solid rgba(0, 0, 0, 0.184);
-            outline:none;
-            background-color: #F9A67D;
-            padding: 0.5rem 1rem;
-            font-size: 1.1rem;
-            margin-bottom: 22px;
-            transition: all 0.3s ease-in-out;
-        }
-        .field:hover{
-            background-color: rgba(0,0,0,0.1);
+    <!-- Hoja de estilo Local Boostrap -->
+    <link rel="stylesheet" href="resources\bootstrap-5.1.3-dist\css\bootstrap.min.css">
+    <!-- Hoja de estilo Local -->
+    <link rel="stylesheet" href="css\style.css">
 
-        }
-        textarea{
-            min-height: 150px;
-        }
-        .btn{
-            width: 100%;
-            padding: 0.5rem 1rem;
-            background-color:#9A3C0D;
-            color: #fff;
-            font-size: 1.1rem;
-            border: none;
-            outline:none;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-        }
-        .btn:hover{
-            background-color: #F9A67D;
-        }
-        .field:focus{
-            border: 2px solid #9A3C0D;
-            background-color: #fff;
-        }
 
-        @media screen and (max-width: 880px){
-         
-          .container{
-           
-            padding: 20px;  
-          }
-         
-            .contact-box{
-                grid-template-columns: 1fr;
-            }
-            .left{
-                background-size: cover;
-                height: 100%;
-            }
-            .right{
-                padding: 25px 20px;
-            }
-        }
-            
-       
-   </style>
+
      
     
 </head>
 <body>
-    <div class="container">
-        <div class="contact-box">
-            <div class="left"></div>
-            <div class="right">
-                <h2>Crud PortFolio</h2>
-                <form action="login.php" method="post">
-                    <input type="text" name="email" id="email" class="field" placeholder="Usuario" required>
-                    <input type="password" name="pass" id="subject" class="field" placeholder="Password" required>
-                   
-                    <input type="submit" value="Enviar" class="btn">
-                  
-                </form>
-        </div>
-    </div>
+
+
+
+
+
     
+
+
+
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  nav__color">
+            <div class="container-fluid r">
+                <a class="navbar-brand d-flex align-content-center" href="#">
+                    <img src="img\logo\logoo.png" alt="" width="100" height="60">
+                    <span id="titulo-nav-index" class="ms-2"><b>PIRELA</b></span>
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="landing.php">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.php">Portafolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page"  href="#">Admin</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+    <div class="container-fluid m-0 p-0 div__adm">
+        <div class="row g-0 ">
+            <div class="col-md-6 div__izquierda">
+                <div class="container p-4">
+                    <div class="container-fluid text-center mb-4">
+                        <img src="./img/logo/logoo.png" class="img-fluid" alt="" srcset="">
+                    </div>
+                    <form action="login.php" method="post"> 
+                        <div class="form-floating mb-3">
+                            <input type="text" name="email" id="email" class="form-control"  placeholder="name@example.com or Username"  required>
+                            <label for="floatingInput">Usuario / email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control"  name="pass" id="subject" placeholder="Contraseña" required>
+                            <label for="floatingPassword">Contraseña</label>
+                        </div>
+                        <div class="form-floating gap-4 d-md-flex justify-content-center">
+                            <button type="submit" value="Enviar" class="btn btn-primary btn-lg">Acceder</button>
+                            <button type="reset" class="btn btn-secondary btn-lg">Borrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 div__derecha">
+            <article class="text-center p-5">
+                <h2>
+                    Bienvenido al Area de Administracion 
+                </h2>
+                <p>Esta Area es para la Administracion de la Pagina, si no eres su dueño regresa al <a href="landing.php">Inicio</a> </p>
+            </article>
+            </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      
+      <!-- popper boostrap cdn -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+      <!-- javascript de bootstrap Local -->
+      <script src="resources\bootstrap-5.1.3-dist\js\bootstrap.bundle.min.js"></script>
 </body>
 </html>

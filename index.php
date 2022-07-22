@@ -87,7 +87,7 @@
        
         
  
-        <div class="container ">
+        <div class="container  pb-4">
         
             <h2 class="text-center p-3 ">Galeria de Proyectos</h2>
 
@@ -110,13 +110,37 @@
             </div>
         </div>
 
-    <div id="contact" class="container text-center ">
+
+    <footer >
+                    <section id="footer__contacto" >
+                    <div class="row g-0 ">
+                       <div class="container-fluid m-0 p-0 ">
+                            <ul class="nav justify-content-center bg-dark ">
+                                <li class="nav-item">
+                                    <a class="nav-link active  " aria-current="page" href="https://www.linkedin.com/in/nolberto-j-pirela/" target="_blank" ><i class=" lni lni-linkedin-original   " style="font: 2rem;"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="mailto:pirela_np@hotmail.com" target="_blank"><i class="lni lni-envelope "></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" target="_blank"><i class="lni lni-whatsapp "></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled " href="#" target="_blank"><i class="lni lni-instagram "></i></a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                    </section>
+
+                    <section>
+                    <div id="contact" class="container text-center ">
         <header>
             <h2 class="m-4">Contactame</h2>
         </header>
     
         <div class="container d-flex justify-content-center">
-            <div class="border-3 col-8"  >
+            <div class="border-3 col-8 pb-3"  >
                 <form action="enviar.php" method='post' >
                         <div class=" row mb-3">
                             <div class="col">
@@ -142,14 +166,8 @@
             </div>
         </div>
     </div>
-    <footer>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Diseñado por Gisele M.Gonzalez</a>
-            </li>
-            
-        </ul>
-    </footer>
+                    </section>
+                  </footer>
  
  <script src="envio.js"></script>
 </body>

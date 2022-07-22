@@ -50,53 +50,31 @@ session_start(); #inicializamos variables de sesion
 
 </head>
 <body>
-<div class="container-fluid">
-    <nav class="navbar navbar-expand-md navbar-dark" >
-        <div class="container-fluid">
+<div class="container-fluid ">
+    <nav class="navbar navbar-expand-md navbar-light" >
+        <div class="container-fluid ">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 ">
                     <li class="nav-item">
                         <div class="p-3 d-flex ">
-                            <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-                            <lord-icon
-                                src="https://cdn.lordicon.com/igpbsrza.json"
-                                trigger="loop"
-                                delay="1000"
-                                colors="primary:#FFFFFF"
-                                style="width:50px;height:50px;">
-                                
-                            </lord-icon>
-                            <a class="nav-link active" aria-current="page"  href="index_admin.php">Ver proyectos</a>
+                        <a class="nav-link active" aria-current="page"  href="index_admin.php"><lord-icon src="https://cdn.lordicon.com/sygggnra.json" trigger="hover" style="width:40px;height:40px">
+                            </lord-icon>Ver proyectos</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="p-3 d-flex ">
-                            <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-                            <lord-icon
-                            src="https://cdn.lordicon.com/stxtcyyo.json"
-                            trigger="loop"
-                            delay="1000"
-                            colors="primary:#FFFFFF"
-                            style="width:50px;height:50px">
-                            </lord-icon>
-                            <a class="nav-link active" aria-current="page"  href="galeria.php">Abm</a>
+ 
+                            <a class="nav-link active" aria-current="page"  href="galeria.php"><lord-icon src="https://cdn.lordicon.com/osqwjgzg.json" trigger="hover" style="width:40px;height:40px"></lord-icon>Alta-baja-modificacion</a>
                         </div>
                    
                     </li>
                     <li class="nav-item">
                         <div class="p-3 d-flex ">
-                            <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-                            <lord-icon
-                                src="https://cdn.lordicon.com/becxqsdr.json"
-                                trigger="loop"
-                                delay="1000"
-                                colors="primary:#FFFFFF"
-                                style="width:50px;height:50px">
-                            </lord-icon>
-                            <a class="nav-link active" href="cerrar.php">Cerrar Sesión de User: <span><?php echo $_SESSION['usuario']; ?></span>  </a> 
+ 
+                            <a class="nav-link active" href="cerrar.php"><lord-icon src="https://cdn.lordicon.com/rqskgpey.json" trigger="hover" style="width:40px;height:40px"> </lord-icon>Cerrar Sesión de User: <span><?php echo $_SESSION['usuario']; ?></span>  </a> 
                         </div>
                    
                     </li>
